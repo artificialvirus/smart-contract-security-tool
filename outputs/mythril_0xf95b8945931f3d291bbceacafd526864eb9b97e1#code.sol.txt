@@ -1,0 +1,1 @@
+{"success": false, "error": "Solc experienced a fatal error.\n\nParserError: Source \"base/BaseModule.sol\" not found: File not found.\n --> contracts/0xf95b8945931f3d291bbceacafd526864eb9b97e1#code.sol:4:1:\n  |\n4 | import {BaseModule} from '../base/BaseModule.sol';\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n", "issues": []}

@@ -1,0 +1,613 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "BATDOG",
+            "source_mapping": {
+              "start": 7383,
+              "length": 202,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                235,
+                236,
+                237,
+                238,
+                239,
+                240,
+                241,
+                242,
+                243,
+                244,
+                245,
+                246
+              ],
+              "starting_column": 1,
+              "ending_column": 0
+            }
+          },
+          {
+            "type": "function",
+            "name": "receive",
+            "source_mapping": {
+              "start": 7549,
+              "length": 34,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                242,
+                243,
+                244
+              ],
+              "starting_column": 5,
+              "ending_column": 5
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "BATDOG",
+                "source_mapping": {
+                  "start": 7383,
+                  "length": 202,
+                  "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    235,
+                    236,
+                    237,
+                    238,
+                    239,
+                    240,
+                    241,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "receive()"
+            }
+          }
+        ],
+        "description": "Contract locking ether found:\n\tContract BATDOG (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#235-246) has payable functions:\n\t - BATDOG.receive() (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#242-244)\n\tBut does not have a function to withdraw the ether\n",
+        "markdown": "Contract locking ether found:\n\tContract [BATDOG](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L235-L246) has payable functions:\n\t - [BATDOG.receive()](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L242-L244)\n\tBut does not have a function to withdraw the ether\n",
+        "first_markdown_element": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L235-L246",
+        "id": "21f2d3832ffb88f22081ffc23bc92254b2d5f5e400647843e89a995dda75620c",
+        "check": "locked-ether",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "_burn",
+            "source_mapping": {
+              "start": 6174,
+              "length": 576,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "ERC20",
+                "source_mapping": {
+                  "start": 2420,
+                  "length": 4961,
+                  "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94,
+                    95,
+                    96,
+                    97,
+                    98,
+                    99,
+                    100,
+                    101,
+                    102,
+                    103,
+                    104,
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114,
+                    115,
+                    116,
+                    117,
+                    118,
+                    119,
+                    120,
+                    121,
+                    122,
+                    123,
+                    124,
+                    125,
+                    126,
+                    127,
+                    128,
+                    129,
+                    130,
+                    131,
+                    132,
+                    133,
+                    134,
+                    135,
+                    136,
+                    137,
+                    138,
+                    139,
+                    140,
+                    141,
+                    142,
+                    143,
+                    144,
+                    145,
+                    146,
+                    147,
+                    148,
+                    149,
+                    150,
+                    151,
+                    152,
+                    153,
+                    154,
+                    155,
+                    156,
+                    157,
+                    158,
+                    159,
+                    160,
+                    161,
+                    162,
+                    163,
+                    164,
+                    165,
+                    166,
+                    167,
+                    168,
+                    169,
+                    170,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    176,
+                    177,
+                    178,
+                    179,
+                    180,
+                    181,
+                    182,
+                    183,
+                    184,
+                    185,
+                    186,
+                    187,
+                    188,
+                    189,
+                    190,
+                    191,
+                    192,
+                    193,
+                    194,
+                    195,
+                    196,
+                    197,
+                    198,
+                    199,
+                    200,
+                    201,
+                    202,
+                    203,
+                    204,
+                    205,
+                    206,
+                    207,
+                    208,
+                    209,
+                    210,
+                    211,
+                    212,
+                    213,
+                    214,
+                    215,
+                    216,
+                    217,
+                    218,
+                    219,
+                    220,
+                    221,
+                    222,
+                    223,
+                    224,
+                    225,
+                    226,
+                    227,
+                    228,
+                    229,
+                    230,
+                    231,
+                    232,
+                    233
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "_burn(address,uint256)"
+            }
+          }
+        ],
+        "description": "ERC20._burn(address,uint256) (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#193-208) is never used and should be removed\n",
+        "markdown": "[ERC20._burn(address,uint256)](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L193-L208) is never used and should be removed\n",
+        "first_markdown_element": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L193-L208",
+        "id": "70b4280aa93f6eb2c97f92406a75cd9ba30bac85d7bf7a71e8eb4369d74cc422",
+        "check": "dead-code",
+        "impact": "Informational",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "_msgData",
+            "source_mapping": {
+              "start": 1265,
+              "length": 232,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                39,
+                40,
+                41,
+                42
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "Context",
+                "source_mapping": {
+                  "start": 1131,
+                  "length": 368,
+                  "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "_msgData()"
+            }
+          }
+        ],
+        "description": "Context._msgData() (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#39-42) is never used and should be removed\n",
+        "markdown": "[Context._msgData()](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L39-L42) is never used and should be removed\n",
+        "first_markdown_element": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L39-L42",
+        "id": "93bd23634a3bf022810e43138345cf58db61248a704a7d277c8ec3d68c3ad188",
+        "check": "dead-code",
+        "impact": "Informational",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "node",
+            "name": "this",
+            "source_mapping": {
+              "start": 1342,
+              "length": 4,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                40
+              ],
+              "starting_column": 9,
+              "ending_column": 13
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "_msgData",
+                "source_mapping": {
+                  "start": 1265,
+                  "length": 232,
+                  "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    39,
+                    40,
+                    41,
+                    42
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "Context",
+                    "source_mapping": {
+                      "start": 1131,
+                      "length": 368,
+                      "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                      "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                      "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "_msgData()"
+                }
+              }
+            }
+          },
+          {
+            "type": "contract",
+            "name": "Context",
+            "source_mapping": {
+              "start": 1131,
+              "length": 368,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            }
+          }
+        ],
+        "description": "Redundant expression \"this (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#40)\" inContext (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#34-43)\n",
+        "markdown": "Redundant expression \"[this](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L40)\" in[Context](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L34-L43)\n",
+        "first_markdown_element": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L40",
+        "id": "a80526a1f117550368a3ab39494d7f4f78ed63fa561ab74025edf49ced5b80b7",
+        "check": "redundant-statements",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "constructor",
+            "source_mapping": {
+              "start": 7424,
+              "length": 119,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                237,
+                238,
+                239,
+                240
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "BATDOG",
+                "source_mapping": {
+                  "start": 7383,
+                  "length": 202,
+                  "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    235,
+                    236,
+                    237,
+                    238,
+                    239,
+                    240,
+                    241,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "constructor()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "_mint(owner(),1000000000 * (10 ** 18))",
+            "source_mapping": {
+              "start": 7497,
+              "length": 39,
+              "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+              "is_dependency": false,
+              "lines": [
+                239
+              ],
+              "starting_column": 9,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 7424,
+                  "length": 119,
+                  "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    237,
+                    238,
+                    239,
+                    240
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "BATDOG",
+                    "source_mapping": {
+                      "start": 7383,
+                      "length": 202,
+                      "filename_relative": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                      "filename_absolute": "/Users/alperonder/Desktop/Dev/smart-contract-security-tool/smart-contract-security-tool/src/scripts/contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                      "filename_short": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        235,
+                        236,
+                        237,
+                        238,
+                        239,
+                        240,
+                        241,
+                        242,
+                        243,
+                        244,
+                        245,
+                        246
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "constructor()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "BATDOG.constructor() (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#237-240) uses literals with too many digits:\n\t- _mint(owner(),1000000000 * (10 ** 18)) (contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#239)\n",
+        "markdown": "[BATDOG.constructor()](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L237-L240) uses literals with too many digits:\n\t- [_mint(owner(),1000000000 * (10 ** 18))](contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L239)\n",
+        "first_markdown_element": "contracts/0x2292A723779A0428e1Dcd0f62958C9CD40F9f675#code.sol#L237-L240",
+        "id": "089390a59df64b1c007086ff437581af3b6fce8df0ff613e45ee782fcd9fd7f6",
+        "check": "too-many-digits",
+        "impact": "Informational",
+        "confidence": "Medium"
+      }
+    ]
+  }
+}

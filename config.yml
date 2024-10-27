@@ -1,0 +1,12 @@
+# File: config.yaml
+
+# Scraping
+num_pages_to_scrape: 5
+
+# Directories
+contracts_dir: "contracts"
+outputs_dir: "outputs"
+
+# Analysis
+timeout_seconds: 100
+

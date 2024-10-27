@@ -1,0 +1,3 @@
+Flask
+flask-cors       # For cross-origin resource sharing with React frontend
+pdfkit           # For PDF generation if needed
